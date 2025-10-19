@@ -1,7 +1,7 @@
 /*
   Arduino GIGA R1 WiFi - Bewässerungssystem für Arduino Cloud
-  OHNE Hysterese - Direkte Echtzeitsteuerung
 */
+
 
 #include "thingProperties.h"
 
