@@ -56,7 +56,7 @@ Komponenten und Pins
 
 const int sensorPins[6] = {A0, A3, A2, A1, A4, A6}; // Heidelbeere, Traubenbaum, Baum, Beet1, Beet2, Johannisbeere.
 
-const int thresholdOn[6] = {342, 506, 417, 445, 445, 340}; // Zeile 14 Heidelbeere, Traubenbaum, Baum, Beet1, Beet2, Johannisbeere 
+const int thresholdOn[6] = {342, 506, 417, 445, 445, 340}; // Zeile 16 Heidelbeere, Traubenbaum, Baum, Beet1, Beet2, Johannisbeere 
 
 
 
