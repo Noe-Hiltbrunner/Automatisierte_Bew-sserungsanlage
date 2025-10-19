@@ -91,3 +91,6 @@ Diese Datei wird automatisch durch #include "arduino_secrets.h" im Hauptprogramm
 - automatic_mode
 - manual_pump_0 - manual_pump_5
 - manual_water_pump
+
+
+Der Code Garten.ino, thingProperies.h und das README.md wurden zudem mit Unterstützung der KI «Claude AI» erstellt.
