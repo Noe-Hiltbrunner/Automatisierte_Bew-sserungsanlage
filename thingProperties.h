@@ -7,7 +7,7 @@
 #include "Secrets.h" // enthält SECRET_SSID und SECRET_PASS
 
 // Thing-ID der Arduino Cloud
-// Hinweis: Die Thing-ID muss zu deinem Projekt in der Cloud passen.
+// Hinweis: Die Thing-ID der Arduino Cloud muss im Code angegeben werden. Sie ist in der Arduino IoT Cloud im Bereich „Things“ unter „Metadata“ zu finden und muss exakt zu dem jeweiligen Projekt passen.
 const char THING_ID[] = "1ea616f1-fa86-4fcc-a223-6e25e65ee455"; // Deine Thing ID
 
 // WLAN-Verbindungshandler
