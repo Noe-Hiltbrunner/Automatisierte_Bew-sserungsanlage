@@ -179,7 +179,6 @@ void updateCloudVariables() {
 
   // Aktueller Wasserstand (cm) und prozentualer Füllstand
   water_level = currentWaterLevel; // gemessener Wert in cm
-  water_level_percent = (currentWaterLevel / BARREL_HEIGHT) * 100; // Prozent berechnen
 
   // Zeigt in der Cloud an, welche Pumpen aktuell laufen (true = EIN, false = AUS)
   pump_0_status = pumpRunning[0];
