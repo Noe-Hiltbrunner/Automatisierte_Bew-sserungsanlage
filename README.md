@@ -1,5 +1,5 @@
 # Automatisierte_Bewässerungsanlage
-Automatisierte Gartenbewässerungsanlage mit Arduino GIGA R1 WiFi,  Sensor und IoT Cloud Verknüpfung. Automatisch sowie manuell steuerbar
+Automatisierte Gartenbewässerungsanlage mit Arduino GIGA R1 WiFi,  Sensoren und IoT Cloud Verknüpfung. Das System ist automatisch sowie manuell steuerbar.
 
 ## Funktionsbeschreibung
 Das entwickelte Programm realisiert ein stabiles, automatisiertes Bewässerungssystem mit einem Arduino GIGA R1 WiFi. 
@@ -68,10 +68,11 @@ const int thresholdOn[6] = {342, 506, 417, 445, 445, 340}; // Zeile 16 Heidelbee
 
 #define SECRET_PASS "DeinPasswort"
 
-Diese Datei wird automatisch durch #include "arduino_secrets.h" im Hauptprogramm eingebunden
+Diese Datei wird automatisch über #include "Secrets.h" im Hauptprogramm eingebunden.
 
-###Secrets.h
+##Secrets.h
 Die Datei **Secrets.h** enthält die vertraulichen WLAN-Zugangsdaten, die für die Verbindung mit der Arduino IoT Cloud benötigt werden.
+In der Arduino IoT Cloud muss sie ebenfalls angelegt werden, damit das Board erfolgreich eine Verbindung herstellen kann.
 
 ## Installation
 
