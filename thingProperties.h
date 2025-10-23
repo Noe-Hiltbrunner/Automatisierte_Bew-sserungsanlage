@@ -1,14 +1,14 @@
-// Arduino IoT Cloud: Thing Properties
+/ Arduino IoT Cloud: Thing Properties
 // Deklariert Cloud-Variablen, Callback-Prototypen und
 // initialisiert die Properties mit Rechten und Triggern.
 
-#include <ArduinoIoTCloud.h>
-#include <Arduino_ConnectionHandler.h>
-#include "Secrets.h" // enthält SECRET_SSID und SECRET_PASS
+#include <ArduinoIoTCloud.h> // Bibliothek für die Kommunikation mit der Arduino IoT Cloud
+#include <Arduino_ConnectionHandler.h> // Bibliothek zur Verwaltung der WLAN- oder Netzwerkverbindung
+#include "Secrets.h" // Diese Datei enthält die Variablen SECRET_SSID und SECRET_PASS und stellt damit die WLAN-Zugangsdaten bereit.
 
 // Thing-ID der Arduino Cloud
-// Hinweis: Die Thing-ID der Arduino Cloud muss im Code angegeben werden. Sie ist in der Arduino IoT Cloud im Bereich „Things“ unter „Metadata“ zu finden und muss exakt zu dem jeweiligen Projekt passen.
-const char THING_ID[] = "1ea616f1-fa86-4fcc-a223-6e25e65ee455"; // Deine Thing ID
+// Hinweis: Die Thing-ID ist im Bereich „Things“ unter „Metadata“ zu finden und muss exakt zum jeweiligen Projekt passen.
+const char THING_ID[] = "033d76fc-0b59-454d-bca9-ad384b8e1f7a"; // Deine Thing ID
 
 // WLAN-Verbindungshandler
 WiFiConnectionHandler ArduinoIoTPreferredConnection(SECRET_SSID, SECRET_PASS);
@@ -18,7 +18,6 @@ WiFiConnectionHandler ArduinoIoTPreferredConnection(SECRET_SSID, SECRET_PASS);
 
 // Messwerte
 float water_level; // Wasserstand in cm
-float water_level_percent; // Füllstand in Prozent
 int moisture_zone_0; // Bodenfeuchte Zone 0 
 int moisture_zone_1; // Bodenfeuchte Zone 1
 int moisture_zone_2; // Bodenfeuchte Zone 2
@@ -64,7 +63,6 @@ void onManualWaterPumpChange();
 void initProperties() {
   // Messwerte
   ArduinoCloud.addProperty(water_level, READ, ON_CHANGE, NULL);
-  ArduinoCloud.addProperty(water_level_percent, READ, ON_CHANGE, NULL);
   ArduinoCloud.addProperty(moisture_zone_0, READ, ON_CHANGE, NULL);
   ArduinoCloud.addProperty(moisture_zone_1, READ, ON_CHANGE, NULL);
   ArduinoCloud.addProperty(moisture_zone_2, READ, ON_CHANGE, NULL);
