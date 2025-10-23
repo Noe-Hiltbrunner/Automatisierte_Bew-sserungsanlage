@@ -70,7 +70,8 @@ const int thresholdOn[6] = {342, 506, 417, 445, 445, 340}; // Zeile 16 Heidelbee
 
 Diese Datei wird automatisch über #include "Secrets.h" im Hauptprogramm eingebunden.
 
-##Secrets.h
+
+## Secrets.h
 Die Datei **Secrets.h** enthält die vertraulichen WLAN-Zugangsdaten, die für die Verbindung mit der Arduino IoT Cloud benötigt werden.
 In der Arduino IoT Cloud muss sie ebenfalls angelegt werden, damit das Board erfolgreich eine Verbindung herstellen kann.
 
